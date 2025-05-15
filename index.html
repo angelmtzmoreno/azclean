@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AZ Clean - Productos de Limpieza</title>
-  <link rel="stylesheet" href="estilos.css">
+
+  <!-- SEO básico -->
+  <meta name="description" content="Productos de limpieza ecológicos, elaborados al momento y entregados en Monterrey y alrededores. Calidad garantizada con atención a empresas y escuelas.">
+  <meta name="keywords" content="productos de limpieza, AZ Clean, Monterrey, desinfectantes, cloro, empresas, escuelas">
+  <meta name="author" content="AZ Clean" />
+
+  <!-- Redes sociales (Open Graph para Facebook, WhatsApp, etc.) -->
+  <meta property="og:title" content="AZ Clean - Productos de Limpieza Ecológicos" />
+  <meta property="og:description" content="Catálogo de productos de limpieza con entregas rápidas en Monterrey. Sustentabilidad y calidad garantizada." />
+  <meta property="og:image" content="https://azclean.com.mx/img/logo_az_clean_web.png" />
+  <meta property="og:url" content="https://azclean.com.mx" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AZ Clean - Productos de Limpieza Ecológicos" />
+  <meta name="twitter:description" content="Limpieza eficaz y responsable para empresas, hogares y escuelas." />
+  <meta name="twitter:image" content="https://azclean.com.mx/img/logo_az_clean_web.png" />
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="img/logo_az_clean_web.png" type="image/png" />
+
+  <!-- Enlace a CSS -->
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
   <header>
-    <img src="logo_az_clean_web.png" alt="Logo AZ Clean">
+    <img src="img/logo_az_clean_web.png" alt="Logo AZ Clean" />
   </header>
 
   <section class="hero">
-    <h1>Productos de Limpieza Ecológicos y Eficientes</h1>
-    <a class="btn" href="#productos">Ver Catálogo</a>
-  </section>
+  <h1>Productos de Limpieza Ecológicos y Eficientes</h1>
+  <a class="btn" href="Catálogo AZ Clean 2025.pdf" target="_blank">Ver Catálogo</a>
+</section>
 
   <section class="section" id="productos">
     <h2>Productos Destacados</h2>
     <div class="productos-grid">
       <div class="producto">
-        <img src="cloro.jpg" alt="Cloro">
-        <h3>Cloro</h3>
+        <img src="img/cloro mascotas.png" alt="Cloro Mascotas" />
+        <h3>Cloro Mascotas</h3>
       </div>
       <div class="producto">
-        <img src="desengrasante.jpg" alt="Desengrasante">
-        <h3>Desengrasante</h3>
+        <img src="img/lavado en seco.png" alt="Lavado en Seco" />
+        <h3>Lavado en Seco</h3>
       </div>
       <div class="producto">
-        <img src="multiusos.jpg" alt="Limpiador Multiusos">
-        <h3>Limpiador Multiusos</h3>
+        <img src="img/multiusos.jpg" alt="Multiusos" />
+        <h3>Multiusos</h3>
       </div>
     </div>
   </section>
 
   <section class="section testimonios">
-    <h2>Testimonios</h2>
+    <h2>Opiniones</h2>
     <div class="testimonios-grid">
       <div class="testimonio">
-        <p>★★★★★</p>
+        <p class="estrellas">★★★★★</p>
         <p>Excelente producto para limpieza profunda. Muy recomendable.</p>
         <strong>Pablo G.</strong>
       </div>
       <div class="testimonio">
-        <p>★★★★★</p>
+        <p class="estrellas">★★★★★</p>
         <p>El producto perfecto, eficaz y fácil de aplicar.</p>
         <strong>Laura M.</strong>
       </div>
       <div class="testimonio">
-        <p>★★★★★</p>
+        <p class="estrellas">★★★★★</p>
         <p>Resultados sorprendentes, el servicio fue muy puntual.</p>
         <strong>Carlos S.</strong>
       </div>
@@ -58,15 +81,29 @@
   <section class="section" id="contacto">
     <h2>Contacto</h2>
     <p>Teléfono: <strong>81 2864 1215</strong></p>
+    <div class="redes-sociales">
+  <a href="https://www.facebook.com/AZClean" target="_blank">
+    <img src="img/facebook.png" alt="Facebook" />
+  </a>
+  <a href="https://www.instagram.com/AZClean" target="_blank">
+    <img src="img/instagram.png" alt="Instagram" />
+  </a>
+  <a href="https://wa.me/528128641215" target="_blank">
+    <img src="img/whatsapp.png" alt="WhatsApp" />
+  </a>
+  <a href="https://www.google.com/maps/place/AZClean" target="_blank">
+    <img src="img/google.png" alt="Google" />
+  </a>
+</div>
     <div class="contacto-form">
       <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <input type="text" id="nombre" name="nombre" required />
 
       <label for="correo">Correo</label>
-      <input type="email" id="correo" name="correo" required>
+      <input type="email" id="correo" name="correo" required />
 
       <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" name="telefono">
+      <input type="tel" id="telefono" name="telefono" />
 
       <label for="comentarios">Comentarios</label>
       <textarea id="comentarios" name="comentarios" rows="4"></textarea>
