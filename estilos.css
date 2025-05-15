@@ -74,3 +74,43 @@ label {
   background-color: #003e88;
   color: white;
 }
+.estrellas {
+  color: #ffc107; /* amarillo tipo Bootstrap */
+  font-size: 1.1em;
+}
+.testimonio {
+  background-color: #ffffff;
+  color: #003e88;
+  border-radius: 10px;
+  padding: 1em;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonio p {
+  margin-bottom: 0.5em;
+}
+
+.testimonio strong {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #1cc0e5;
+}
+.redes-sociales {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.redes-sociales img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
