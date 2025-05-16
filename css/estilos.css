@@ -1,24 +1,31 @@
+/* 🔵 Estilos generales del sitio */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #ffffff;
   color: #003e88;
 }
+
+/* 🔵 Encabezado del sitio (logo) */
 header {
-  background-color: #ffffff; /* blanco */
+  background-color: #ffffff;
   text-align: center;
   padding: 1em 0;
 }
+header img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* 🔵 Pie de página */
 footer {
   background-color: #003e88;
   color: white;
   padding: 1em 0;
   text-align: center;
 }
-header img {
-  max-width: 300px;
-  height: auto;
-}
+
+/* 🔵 Sección hero (principal) */
 .hero {
   background-color: #1cc0e5;
   padding: 3em 1em;
@@ -29,6 +36,8 @@ header img {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+
+/* 🔵 Botones principales */
 .btn {
   background-color: #d0e318;
   color: #003e88;
@@ -38,10 +47,14 @@ header img {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* 🔵 Secciones genéricas */
 .section {
   padding: 2em 1em;
   text-align: center;
 }
+
+/* 🔵 Diseño en cuadrícula para productos y testimonios */
 .productos-grid, .testimonios-grid {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +62,8 @@ header img {
   gap: 1.5em;
   margin-top: 1em;
 }
+
+/* 🔵 Tarjetas de producto y testimonio */
 .producto, .testimonio {
   display: flex;
   flex-direction: column;
@@ -60,21 +75,27 @@ header img {
   width: 250px;
   background: #f8f8f8;
   text-align: center;
-  height: 400px; /* Fijamos altura para alinear */
+  height: 400px;
   box-sizing: border-box;
 }
+
+/* 🔵 Imágenes de productos y testimonios */
 .producto img, .testimonio img {
   max-width: 100%;
-  max-height: 250px; /* igual para todas */
+  max-height: 250px;
   object-fit: contain;
   margin-bottom: 1em;
 }
+
+/* 🔵 Título de productos */
 .producto h3 {
   margin-top: auto;
   font-size: 1.1em;
   font-weight: bold;
   color: #003e88;
 }
+
+/* 🔵 Estilos del formulario de contacto personalizado */
 .contacto-form {
   max-width: 500px;
   margin: auto;
@@ -82,22 +103,32 @@ header img {
   flex-direction: column;
   gap: 1em;
 }
+
+/* 🔵 Campos de entrada del formulario */
 input, textarea {
   padding: 0.8em;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+/* 🔵 Etiquetas de los campos */
 label {
   font-weight: bold;
 }
+
+/* 🔵 Fondo de la sección de testimonios */
 .testimonios {
   background-color: #003e88;
   color: white;
 }
+
+/* 🔵 Estrellas amarillas en testimonios */
 .estrellas {
-  color: #ffc107; /* amarillo tipo Bootstrap */
+  color: #ffc107;
   font-size: 1.1em;
 }
+
+/* 🔵 Estilo individual de las tarjetas de testimonio */
 .testimonio {
   background-color: #ffffff;
   color: #003e88;
@@ -107,40 +138,39 @@ label {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
-
 .testimonio p {
   margin-bottom: 0.5em;
 }
-
 .testimonio strong {
   display: block;
   margin-top: 0.5em;
   font-weight: bold;
   color: #1cc0e5;
 }
+
+/* 🔵 Iconos de redes sociales */
 .redes-sociales {
   margin-top: 1em;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .redes-sociales img {
   width: 32px;
   height: 32px;
   transition: transform 0.2s ease;
 }
-
 .redes-sociales img:hover {
   transform: scale(1.2);
 }
+
+/* 🔵 Barra superior con contacto general */
 .topbar {
   background-color: #003e88;
   color: white;
   font-size: 0.9em;
   padding: 0.5em 1em;
 }
-
 .topbar-content {
   display: flex;
   justify-content: space-around;
@@ -151,7 +181,6 @@ label {
 /* ============================== */
 /* 🔹 ESTILOS DEL MENÚ DE NAVEGACIÓN (NAVBAR) */
 /* ============================== */
-
 .navbar {
   background-color: #004080;
   color: white;
@@ -161,7 +190,6 @@ label {
   padding: 0.5em 1em;
   flex-wrap: wrap;
 }
-
 .menu {
   list-style: none;
   display: flex;
@@ -169,17 +197,14 @@ label {
   margin: 0;
   padding: 0;
 }
-
 .menu li {
   position: relative;
 }
-
 .menu a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-
 .menu .submenu {
   display: none;
   position: absolute;
@@ -192,17 +217,16 @@ label {
   min-width: 150px;
   z-index: 999;
 }
-
 .menu .submenu li a {
   color: #003e88;
   display: block;
   padding: 0.3em 0;
 }
-
 .menu .dropdown:hover .submenu {
   display: block;
 }
 
+/* 🔵 Buscador al lado derecho del menú */
 .buscador {
   display: flex;
   align-items: center;
@@ -211,17 +235,34 @@ label {
   overflow: hidden;
   margin-top: 0.5em;
 }
-
 .buscador input {
   border: none;
   padding: 0.5em;
   width: 150px;
 }
-
 .buscador button {
   background: #1cc0e5;
   border: none;
   padding: 0.5em;
   color: white;
   cursor: pointer;
+}
+
+/* ============================== */
+/* 🔹 FORMULARIO DE HUBSPOT AJUSTADO AL DISEÑO */
+/* ============================== */
+.formulario-ajustado {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+/* 🔧 Forzar que el formulario interno de HubSpot respete el ancho */
+.formulario-ajustado .hs-form-frame,
+.formulario-ajustado form {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
