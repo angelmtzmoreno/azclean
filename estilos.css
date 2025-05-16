@@ -4,7 +4,12 @@ body {
   background: #ffffff;
   color: #003e88;
 }
-header, footer {
+header {
+  background-color: #ffffff; /* blanco */
+  text-align: center;
+  padding: 1em 0;
+}
+footer {
   background-color: #003e88;
   color: white;
   padding: 1em 0;
@@ -45,15 +50,30 @@ header img {
   margin-top: 1em;
 }
 .producto, .testimonio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1em;
   width: 250px;
   background: #f8f8f8;
+  text-align: center;
+  height: 400px; /* Fijamos altura para alinear */
+  box-sizing: border-box;
 }
 .producto img, .testimonio img {
   max-width: 100%;
-  border-radius: 10px;
+  max-height: 250px; /* igual para todas */
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+.producto h3 {
+  margin-top: auto;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #003e88;
 }
 .contacto-form {
   max-width: 500px;
@@ -113,4 +133,95 @@ label {
 
 .redes-sociales img:hover {
   transform: scale(1.2);
+}
+.topbar {
+  background-color: #003e88;
+  color: white;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/* ============================== */
+/* 🔹 ESTILOS DEL MENÚ DE NAVEGACIÓN (NAVBAR) */
+/* ============================== */
+
+.navbar {
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0.5em;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 999;
+}
+
+.menu .submenu li a {
+  color: #003e88;
+  display: block;
+  padding: 0.3em 0;
+}
+
+.menu .dropdown:hover .submenu {
+  display: block;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5em;
+}
+
+.buscador input {
+  border: none;
+  padding: 0.5em;
+  width: 150px;
+}
+
+.buscador button {
+  background: #1cc0e5;
+  border: none;
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
 }
