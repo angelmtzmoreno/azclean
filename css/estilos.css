@@ -266,3 +266,58 @@ label {
   padding: 0 !important;
   box-sizing: border-box !important;
 }
+
+/* ============================== */
+/* 🔹 BARRA SUPERIOR DE CONTACTO PARA AZ CLEAN */
+/* ============================== */
+
+.barra-contacto {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 1em 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.barra-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.barra-contenido img {
+  max-height: 60px; /* Ajuste del logo en altura */
+}
+
+.info-contacto {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #003e88; /* Azul corporativo AZ Clean */
+  font-size: 0.9em;
+}
+
+.icono {
+  font-size: 1.5em;
+}
+
+.boton-contacto {
+  background-color: #1cc0e5; /* Azul cielo AZ Clean */
+  color: white;
+  padding: 0.7em 1.5em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #009ec2; /* Versión más intensa al pasar el cursor */
+}
