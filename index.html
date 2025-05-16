@@ -130,22 +130,25 @@
     <img src="img/google.png" alt="Google" />
   </a>
 </div>
-    <div class="contacto-form">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required />
 
-      <label for="correo">Correo</label>
-      <input type="email" id="correo" name="correo" required />
+<!-- 🔹 FORMULARIO DE HUBSPOT CENTRADO Y CON ANCHO LIMITADO -->
+<section class="section" id="contacto">
+  <h2>Contacto</h2>
+  <p>Teléfono: <strong>81 2864 1215</strong></p>
 
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" name="telefono" />
-
-      <label for="comentarios">Comentarios</label>
-      <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-
-      <button class="btn" type="submit">Enviar</button>
+  <!-- 🔸 Contenedor centrado con ancho máximo -->
+  <div style="display: flex; justify-content: center;">
+    <div style="max-width: 600px; width: 100%;">
+      <script src="https://js.hsforms.net/forms/embed/50065620.js" defer></script>
+      <div class="hs-form-frame"
+           data-region="na1"
+           data-form-id="fc2b4d55-a5f7-4e07-b007-cb5ead1a6ead"
+           data-portal-id="50065620">
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- 🔹 FIN DEL FORMULARIO DE HUBSPOT -->
 
   <footer>
     <p>&copy; 2025 AZ Clean. Todos los derechos reservados.</p>
