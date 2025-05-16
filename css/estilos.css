@@ -1,4 +1,7 @@
-/* 🔵 Estilos generales del sitio */
+
+/* ============================== */
+/* 🔵 1. Estilos generales del sitio (Body y Tipografía) */
+/* ============================== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,38 +9,194 @@ body {
   color: #003e88;
 }
 
-/* 🔵 Encabezado del sitio (logo) */
+/* ============================== */
+/* 🔵 2. Barra superior de contacto (visible arriba de todo) */
+/* ============================== */
+.barra-contacto {
+  background-color: #ffffff;
+  padding: 1em 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.barra-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.barra-contenido img {
+  max-height: 60px;
+}
+
+.info-contacto {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: #003e88;
+  font-size: 0.9em;
+}
+
+.icono {
+  font-size: 1.5em;
+}
+
+.boton-contacto {
+  background-color: #1cc0e5;
+  color: white;
+  padding: 0.7em 1.5em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #009ec2;
+}
+
+/* 🔧 Responsive barra de contacto */
+@media (max-width: 768px) {
+  .barra-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .barra-contenido img {
+    max-height: 50px;
+    margin-bottom: 1em;
+  }
+
+  .info-contacto {
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+
+  .boton-contacto {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* ============================== */
+/* 🔵 3. Encabezado principal (Logo debajo de barra contacto) */
+/* ============================== */
 header {
   background-color: #ffffff;
   text-align: center;
   padding: 1em 0;
 }
+
 header img {
   max-width: 300px;
   height: auto;
 }
 
-/* 🔵 Pie de página */
-footer {
-  background-color: #003e88;
+/* ============================== */
+/* 🔵 4. Menú de navegación (Navbar) */
+/* ============================== */
+.navbar {
+  background-color: #004080;
   color: white;
-  padding: 1em 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  flex-wrap: wrap;
 }
 
-/* 🔵 Sección hero (principal) */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0.5em;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 999;
+}
+
+.menu .submenu li a {
+  color: #003e88;
+  display: block;
+  padding: 0.3em 0;
+}
+
+.menu .dropdown:hover .submenu {
+  display: block;
+}
+
+/* Buscador dentro del menú */
+.buscador {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.5em;
+}
+
+.buscador input {
+  border: none;
+  padding: 0.5em;
+  width: 150px;
+}
+
+.buscador button {
+  background: #1cc0e5;
+  border: none;
+  padding: 0.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================== */
+/* 🔵 5. Hero o sección principal */
+/* ============================== */
 .hero {
   background-color: #1cc0e5;
   padding: 3em 1em;
   text-align: center;
   color: white;
 }
+
 .hero h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
 
-/* 🔵 Botones principales */
+/* ============================== */
+/* 🔵 6. Botones generales */
 .btn {
   background-color: #d0e318;
   color: #003e88;
@@ -48,13 +207,13 @@ footer {
   text-decoration: none;
 }
 
-/* 🔵 Secciones genéricas */
+/* ============================== */
+/* 🔵 7. Secciones y productos */
 .section {
   padding: 2em 1em;
   text-align: center;
 }
 
-/* 🔵 Diseño en cuadrícula para productos y testimonios */
 .productos-grid, .testimonios-grid {
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +222,6 @@ footer {
   margin-top: 1em;
 }
 
-/* 🔵 Tarjetas de producto y testimonio */
 .producto, .testimonio {
   display: flex;
   flex-direction: column;
@@ -79,7 +237,6 @@ footer {
   box-sizing: border-box;
 }
 
-/* 🔵 Imágenes de productos y testimonios */
 .producto img, .testimonio img {
   max-width: 100%;
   max-height: 250px;
@@ -87,7 +244,6 @@ footer {
   margin-bottom: 1em;
 }
 
-/* 🔵 Título de productos */
 .producto h3 {
   margin-top: auto;
   font-size: 1.1em;
@@ -95,40 +251,18 @@ footer {
   color: #003e88;
 }
 
-/* 🔵 Estilos del formulario de contacto personalizado */
-.contacto-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-/* 🔵 Campos de entrada del formulario */
-input, textarea {
-  padding: 0.8em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* 🔵 Etiquetas de los campos */
-label {
-  font-weight: bold;
-}
-
-/* 🔵 Fondo de la sección de testimonios */
+/* ============================== */
+/* 🔵 8. Testimonios */
 .testimonios {
   background-color: #003e88;
   color: white;
 }
 
-/* 🔵 Estrellas amarillas en testimonios */
 .estrellas {
   color: #ffc107;
   font-size: 1.1em;
 }
 
-/* 🔵 Estilo individual de las tarjetas de testimonio */
 .testimonio {
   background-color: #ffffff;
   color: #003e88;
@@ -138,9 +272,11 @@ label {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+
 .testimonio p {
   margin-bottom: 0.5em;
 }
+
 .testimonio strong {
   display: block;
   margin-top: 0.5em;
@@ -148,116 +284,52 @@ label {
   color: #1cc0e5;
 }
 
-/* 🔵 Iconos de redes sociales */
+/* ============================== */
+/* 🔵 9. Redes sociales */
 .redes-sociales {
   margin-top: 1em;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .redes-sociales img {
   width: 32px;
   height: 32px;
   transition: transform 0.2s ease;
 }
+
 .redes-sociales img:hover {
   transform: scale(1.2);
 }
 
-/* 🔵 Barra superior con contacto general */
-.topbar {
-  background-color: #003e88;
-  color: white;
-  font-size: 0.9em;
-  padding: 0.5em 1em;
-}
-.topbar-content {
+/* ============================== */
+/* 🔵 10. Formulario de contacto (HubSpot y personalizado) */
+.contacto-form {
+  max-width: 500px;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1em;
 }
 
-/* ============================== */
-/* 🔹 ESTILOS DEL MENÚ DE NAVEGACIÓN (NAVBAR) */
-/* ============================== */
-.navbar {
-  background-color: #004080;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em 1em;
-  flex-wrap: wrap;
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-  margin: 0;
-  padding: 0;
-}
-.menu li {
-  position: relative;
-}
-.menu a {
-  color: white;
-  text-decoration: none;
+
+label {
   font-weight: bold;
 }
-.menu .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  padding: 0.5em;
-  list-style: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  min-width: 150px;
-  z-index: 999;
-}
-.menu .submenu li a {
-  color: #003e88;
-  display: block;
-  padding: 0.3em 0;
-}
-.menu .dropdown:hover .submenu {
-  display: block;
-}
 
-/* 🔵 Buscador al lado derecho del menú */
-.buscador {
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 0.5em;
-}
-.buscador input {
-  border: none;
-  padding: 0.5em;
-  width: 150px;
-}
-.buscador button {
-  background: #1cc0e5;
-  border: none;
-  padding: 0.5em;
-  color: white;
-  cursor: pointer;
-}
-
-/* ============================== */
-/* 🔹 FORMULARIO DE HUBSPOT AJUSTADO AL DISEÑO */
-/* ============================== */
 .formulario-ajustado {
   max-width: 600px;
   margin: 0 auto;
   padding: 1em;
   box-sizing: border-box;
 }
-/* 🔧 Forzar que el formulario interno de HubSpot respete el ancho */
+
 .formulario-ajustado .hs-form-frame,
 .formulario-ajustado form {
   max-width: 100% !important;
@@ -268,56 +340,10 @@ label {
 }
 
 /* ============================== */
-/* 🔹 BARRA SUPERIOR DE CONTACTO PARA AZ CLEAN */
-/* ============================== */
-
-.barra-contacto {
-  background-color: #ffffff; /* Fondo blanco */
-  padding: 1em 2em;
-  border-bottom: 1px solid #ccc;
-}
-
-.barra-contenido {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.barra-contenido img {
-  max-height: 60px; /* Ajuste del logo en altura */
-}
-
-.info-contacto {
-  display: flex;
-  gap: 2em;
-  flex-wrap: wrap;
-}
-
-.item-contacto {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  color: #003e88; /* Azul corporativo AZ Clean */
-  font-size: 0.9em;
-}
-
-.icono {
-  font-size: 1.5em;
-}
-
-.boton-contacto {
-  background-color: #1cc0e5; /* Azul cielo AZ Clean */
+/* 🔵 11. Pie de página */
+footer {
+  background-color: #003e88;
   color: white;
-  padding: 0.7em 1.5em;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.boton-contacto:hover {
-  background-color: #009ec2; /* Versión más intensa al pasar el cursor */
+  padding: 1em 0;
+  text-align: center;
 }
