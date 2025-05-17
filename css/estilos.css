@@ -88,6 +88,21 @@ body {
   }
 }
 
+/* 🔧 Ajuste de alineación a la izquierda en barra de contacto */
+.barra-contenido.barra-izquierda {
+  justify-content: flex-start;
+  gap: 2em;
+}
+
+/* Responsive para móviles: centrado automático */
+@media (max-width: 768px) {
+  .barra-contenido.barra-izquierda {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* ============================== */
 /* 🔵 3. Encabezado principal (Logo debajo de barra contacto) */
 /* ============================== */
