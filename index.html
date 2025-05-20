@@ -31,32 +31,6 @@
 </head>
 
 <body>
-<!-- 🔹 BARRA DE CONTACTO SUPERIOR, ALINEADA A LA IZQUIERDA -->
-<div class="barra-contacto">
-  <div class="barra-contenido barra-izquierda">
-    <img src="img/logo_az_clean_web.png" alt="AZ Clean Logo">
-
-    <div class="info-contacto">
-      <div class="item-contacto">
-        <span class="icono">📞</span>
-        <div>
-          <strong>WhatsApp</strong><br>
-          81 2864 1215
-        </div>
-      </div>
-
-      <div class="item-contacto">
-        <span class="icono">✉️</span>
-        <div>
-          <strong>Contáctanos</strong><br>
-          azcleanmx@gmail.com
-        </div>
-      </div>
-    </div>
-
-    <a href="#contacto" class="boton-contacto">CONTACTO</a>
-  </div>
-</div>
 
 <!-- 🔹 NAVBAR PRINCIPAL (Menú de navegación con submenú y buscador) -->
 <nav class="navbar">
@@ -83,21 +57,56 @@
   </div>
 </nav>
 
-<!-- 🔹 Presentación Canva embebida -->
-<section class="section" id="presentacion">
-  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-      src="https://www.canva.com/design/DAGndCni3S0/Vbn40OVeDabMnwTTjNMqxQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
+<section class="landing-hero">
+  <div class="landing-overlay">
+    <h1>Haz que cada espacio brille</h1>
+    <p>Desde cloro hasta sanitizante, tenemos todo para que la limpieza sea fácil, rápida y profesional.</p>
+    <a href="#catalogo" class="btn">Ver Catálogo</a>
   </div>
-  <p style="text-align: center;">
-    <a href="https://www.canva.com/design/DAGndCni3S0/Vbn40OVeDabMnwTTjNMqxQ/view?utm_content=DAGndCni3S0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" 
-       target="_blank" rel="noopener" style="text-decoration: none; color: #1cc0e5; font-weight: bold;">
-      Ver presentación completa en Canva
-    </a>
-  </p>
+</section>
+
+<!-- 🔹 Sección Lavandería visual -->
+<section class="landing-lavanderia">
+  <div class="overlay-lavanderia">
+    <div class="contenido-lavanderia">
+      <h2>Tus textiles, como nuevos</h2>
+      <p>Renueva aromas, colores y suavidad con nuestra línea de lavandería de alto rendimiento.</p>
+      <a href="#catalogo" class="btn-lavanderia">Ver Catálogo</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Sección Cocina visual -->
+<section class="landing-cocina">
+  <div class="overlay-cocina">
+    <div class="contenido-cocina">
+      <h2>Brilla tu cocina. Cuida tu salud.</h2>
+      <p>Elimina grasa, restos de comida y bacterias con nuestra línea de limpieza para cocinas.</p>
+      <a href="#catalogo" class="btn-cocina">Ver Catálogo</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Sección Baños visual -->
+<section class="landing-banos">
+  <div class="overlay-banos">
+    <div class="contenido-banos">
+      <h2>Tu mejor aliado en higiene y desinfección.</h2>
+      <p>Elimina sarro, bacterias y malos olores con nuestra línea para baños.</p>
+      <a href="#catalogo" class="btn-banos">Ver Catálogo</a>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 Sección Automotriz visual -->
+<section class="landing-automotriz">
+  <div class="overlay-automotriz">
+    <div class="contenido-automotriz">
+      <h2>Cuida el brillo, cuida tu inversión.</h2>
+      <p>Dale a cada auto un acabado profesional con nuestra línea automotriz.</p>
+      <a href="#catalogo" class="btn-automotriz">Ver Catálogo</a>
+    </div>
+  </div>
 </section>
 
   <section class="section" id="productos">
@@ -139,32 +148,47 @@
     </div>
   </section>
 
-  <section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p>Teléfono: <strong>81 2864 1215</strong></p>
-    <div class="redes-sociales">
-  <a href="https://www.facebook.com/AZClean" target="_blank">
-    <img src="img/facebook.png" alt="Facebook" />
-  </a>
-  <a href="https://www.instagram.com/AZClean" target="_blank">
-    <img src="img/instagram.png" alt="Instagram" />
-  </a>
-  <a href="https://wa.me/528128641215" target="_blank">
-    <img src="img/whatsapp.png" alt="WhatsApp" />
-  </a>
-  <a href="https://www.google.com/maps/place/AZClean" target="_blank">
-    <img src="img/google.png" alt="Google" />
-  </a>
-</div>
+<!-- BLOQUE DE CONTACTO FUNCIONAL -->
+<section class="landing-contacto" id="contacto">
+  <div class="contacto-contenido" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4em; padding: 2em; background-color: #002600; color: white;">
 
-<!-- 🔹 FORMULARIO DE HUBSPOT CENTRADO Y CON ANCHO LIMITADO -->
-<section class="section" id="contacto">
-  <h2>Contacto</h2>
-  <p>Teléfono: <strong>81 2864 1215</strong></p>
+    <!-- Columna izquierda: datos -->
+    <div class="bloque-contacto" style="flex: 1 1 300px; max-width: 400px;">
+      <img src="img/logo_az_clean_blanco.png" alt="AZ Clean Logo" style="max-width: 180px; margin-bottom: 1em;">
+      <h2 style="margin-bottom: 1.5em;">Contacto</h2>
+    
+      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
+        <img src="img/icono-correo.png" alt="Correo" style="width: 32px; height: 32px;">
+        <p style="margin: 0;">azcleanmx@gmail.com</p>
+      </div>
 
-  <!-- 🔸 Contenedor centrado con ancho máximo -->
-  <div style="display: flex; justify-content: center;">
-    <div style="max-width: 600px; width: 100%;">
+      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
+        <img src="img/icono-whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;">
+        <p style="margin: 0;">(81) 2864 1215</p>
+      </div>
+
+      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
+        <img src="img/icono-facebook.png" alt="Facebook" style="width: 32px; height: 32px;">
+        <p style="margin: 0;">AZ Clean</p>
+      </div>
+
+      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
+        <img src="img/icono-instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
+        <p style="margin: 0;">@azcleanmx</p>
+      </div>
+
+      <div class="item-contacto" style="display: flex; align-items: flex-start; gap: 1em; margin-bottom: 1.2em;">
+        <img src="img/icono-mapa.png" alt="Ubicación" style="width: 32px; height: 32px;">
+        <p style="margin: 0;">
+          Pascasio Luis de Letona 312,<br>
+          Paseo de San Nicolás 1er Sector,<br>
+          66446 San Nicolás de los Garza, N.L.
+        </p>
+      </div>
+    </div>
+
+    <!-- Columna derecha: FORMULARIO DE HUBSPOT -->
+    <div class="formulario-contacto-derecha" style="flex: 1 1 400px;">
       <script src="https://js.hsforms.net/forms/embed/50065620.js" defer></script>
       <div class="hs-form-frame"
            data-region="na1"
@@ -181,3 +205,4 @@
   </footer>
 </body>
 </html>
+
