@@ -1,4 +1,3 @@
-
 /* ============================== */
 /* 🔵 1. Estilos generales del sitio (Body y Tipografía) */
 /* ============================== */
@@ -361,4 +360,445 @@ footer {
   color: white;
   padding: 1em 0;
   text-align: center;
+}
+
+/* 🔹 HERO tipo landing con imagen de fondo completa */
+.landing-hero {
+  background-image: url("../img/limpieza-general.png"); /* Ajusta si tu ruta es diferente */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.landing-hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.landing-hero p {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+.landing-hero .btn {
+  background-color: #1cc0e5;
+  color: white;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.landing-hero .btn:hover {
+  background-color: #009ec2;
+}
+
+/* 🔹 Sección visual de lavandería */
+.landing-lavanderia {
+  background-image: url("../img/lavanderia.png"); /* Asegúrate de que esté en /img */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-lavanderia {
+  background-color: rgba(0, 0, 0, 0.4); /* Oscurece un poco para que el texto se lea mejor */
+  padding: 3em 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+}
+
+.contenido-lavanderia h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.contenido-lavanderia p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn-lavanderia {
+  background-color: #c59c6d;
+  color: white;
+  padding: 0.7em 1.8em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.btn-lavanderia:hover {
+  background-color: #a87f55;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay-lavanderia {
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  .contenido-lavanderia h2 {
+    font-size: 2em;
+  }
+
+  .contenido-lavanderia p {
+    font-size: 1em;
+  }
+}
+
+/* 🔹 Sección visual de cocina */
+.landing-cocina {
+  background-image: url("../img/cocina.png"); /* Asegúrate de tener el archivo en /img */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-cocina {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3em 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+}
+
+.contenido-cocina h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.contenido-cocina p {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.btn-cocina {
+  background-color: #c59c6d;
+  color: white;
+  padding: 0.7em 1.8em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.btn-cocina:hover {
+  background-color: #a87f55;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay-cocina {
+    padding: 2em 1em;
+  }
+
+  .contenido-cocina h2 {
+    font-size: 2em;
+  }
+
+  .contenido-cocina p {
+    font-size: 1em;
+  }
+}
+
+/* 🔹 Sección visual de baños */
+.landing-banos {
+  background-image: url("../img/banos.png"); /* Asegúrate de que esté en la carpeta /img */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-banos {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3em 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+}
+
+.contenido-banos h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.contenido-banos p {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.btn-banos {
+  background-color: #c59c6d;
+  color: white;
+  padding: 0.7em 1.8em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.btn-banos:hover {
+  background-color: #a87f55;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay-banos {
+    padding: 2em 1em;
+  }
+
+  .contenido-banos h2 {
+    font-size: 2em;
+  }
+
+  .contenido-banos p {
+    font-size: 1em;
+  }
+}
+
+/* 🔹 Sección visual de automotriz */
+.landing-automotriz {
+  background-image: url("../img/automotriz.png"); /* Ajusta si es JPG o diferente */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-automotriz {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3em 2em;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+}
+
+.contenido-automotriz h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.contenido-automotriz p {
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.btn-automotriz {
+  background-color: #c59c6d;
+  color: white;
+  padding: 0.7em 1.8em;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.btn-automotriz:hover {
+  background-color: #a87f55;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay-automotriz {
+    padding: 2em 1em;
+  }
+
+  .contenido-automotriz h2 {
+    font-size: 2em;
+  }
+
+  .contenido-automotriz p {
+    font-size: 1em;
+  }
+}
+
+/* 🔹 Sección de contacto oscura con íconos */
+.landing-contacto {
+  background-color: #002d00; /* verde oscuro */
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.logo-contacto {
+  max-height: 80px;
+  margin-bottom: 1em;
+}
+
+.landing-contacto h2 {
+  font-size: 3em;
+  margin-bottom: 1.5em;
+}
+
+.grid-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.item-contacto img {
+  width: 50px;
+  margin-bottom: 0.5em;
+}
+
+.item-contacto p {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.ubicacion {
+  max-width: 300px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .grid-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-contacto h2 {
+    font-size: 2em;
+  }
+}
+
+/* 🔹 Sección de contacto horizontal dividida */
+.landing-contacto {
+  background-color: #002d00; /* verde oscuro */
+  color: white;
+  padding: 4em 2em;
+}
+
+.contacto-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 3em;
+}
+
+/* Izquierda: datos de contacto */
+.info-contacto-izquierda {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.logo-contacto {
+  max-height: 80px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.info-contacto-izquierda h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.bloque-contacto {
+  max-width: 400px;
+  margin: auto;
+  color: white;
+}
+
+/* CONTACTO: íconos alineados a la izquierda con texto a la derecha */
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+  color: white;
+}
+
+.item-contacto img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.item-contacto p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  color: white;
+}
+
+/* Derecha: formulario de HubSpot */
+.formulario-contacto-derecha {
+  flex: 1 1 500px;
+  min-width: 350px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-contacto {
+    justify-content: center;
+  }
+
+  .formulario-contacto-derecha {
+    width: 100%;
+  }
 }
