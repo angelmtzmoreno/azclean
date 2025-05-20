@@ -32,8 +32,11 @@
 
 <body>
 
-<!-- 🔹 NAVBAR PRINCIPAL (Menú de navegación con submenú y buscador) -->
 <nav class="navbar">
+  <!-- 🔹 Botón hamburguesa para móviles -->
+  <button class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('show')">☰</button>
+
+  <!-- 🔹 Menú principal -->
   <ul class="menu">
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#productos">Productos</a></li>
@@ -50,7 +53,7 @@
     <li><a href="Catálogo AZ Clean 2025.pdf" target="_blank">Catálogo</a></li>
   </ul>
 
-  <!-- 🔍 Buscador simulado -->
+  <!-- 🔹 Buscador -->
   <div class="buscador">
     <input type="text" placeholder="Buscar productos...">
     <button>🔍</button>
