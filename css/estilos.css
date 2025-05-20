@@ -1146,3 +1146,69 @@ html, body {
   text-decoration: underline;
 }
 
+/* Estilos para la barra de navegación móvil */
+.navbar-movil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-izquierda,
+.logo-centro,
+.contacto-derecha {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-izquierda {
+  justify-content: flex-start;
+}
+
+.contacto-derecha {
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #003e88;
+  cursor: pointer;
+}
+
+.logo-centro img {
+  max-height: 50px;
+}
+
+.whatsapp-icon {
+  font-size: 1.5em;
+  color: #25D366;
+  text-decoration: none;
+}
+
+.telefono {
+  font-size: 0.9em;
+  color: #003e88;
+}
+
+/* Mostrar solo en dispositivos móviles */
+@media (min-width: 769px) {
+  .navbar-movil {
+    display: none;
+  }
+}
+
+.btn-whatsapp img {
+  width: 32px;
+  height: 32px;
+  background-color: #25D366;
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
