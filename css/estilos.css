@@ -1,3 +1,4 @@
+
 /* ============================== */
 /* 🔵 1. Estilos generales del sitio (Body y Tipografía) */
 /* ============================== */
@@ -125,7 +126,7 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: 0.5em;
   flex-wrap: wrap;
 }
 
@@ -801,4 +802,25 @@ footer {
   .formulario-contacto-derecha {
     width: 100%;
   }
+}
+
+/* ✅ Evita scroll horizontal en móviles */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ✅ Asegura que todos los elementos no se desborden del ancho */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.landing-hero,
+.landing-lavanderia,
+.landing-cocina,
+.landing-banos,
+.landing-automotriz {
+  width: 100vw;
+  overflow-x: hidden;
 }
