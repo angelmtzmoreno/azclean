@@ -5,113 +5,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AZ Clean - Productos de Limpieza</title>
 
-  <!-- SEO básico -->
+  <!-- 🔹 SEO básico -->
   <meta name="description" content="Productos de limpieza ecológicos, elaborados al momento y entregados en Monterrey y alrededores. Calidad garantizada con atención a empresas y escuelas.">
   <meta name="keywords" content="productos de limpieza, AZ Clean, Monterrey, desinfectantes, cloro, empresas, escuelas">
   <meta name="author" content="AZ Clean" />
 
-  <!-- Redes sociales (Open Graph para Facebook, WhatsApp, etc.) -->
+  <!-- 🔹 Redes sociales -->
   <meta property="og:title" content="AZ Clean - Productos de Limpieza Ecológicos" />
   <meta property="og:description" content="Catálogo de productos de limpieza con entregas rápidas en Monterrey. Sustentabilidad y calidad garantizada." />
   <meta property="og:image" content="https://azclean.com.mx/img/logo_az_clean_web.png" />
   <meta property="og:url" content="https://azclean.com.mx" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AZ Clean - Productos de Limpieza Ecológicos" />
   <meta name="twitter:description" content="Limpieza eficaz y responsable para empresas, hogares y escuelas." />
   <meta name="twitter:image" content="https://azclean.com.mx/img/logo_az_clean_web.png" />
 
-  <!-- Favicon (opcional) -->
+  <!-- 🔹 Favicon -->
   <link rel="icon" href="img/logo_az_clean_web.png" type="image/png" />
 
-  <!-- Enlace a CSS -->
+  <!-- 🔹 Hoja de estilos -->
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
 
-<nav class="navbar">
-  <!-- 🔹 Botón hamburguesa para móviles -->
-  <button class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('show')">☰</button>
-
-  <!-- 🔹 Menú principal -->
-  <ul class="menu">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li class="dropdown">
-      <a href="#">Empresa ▾</a>
-      <ul class="submenu">
-        <li><a href="#mision">Misión</a></li>
-        <li><a href="#vision">Visión</a></li>
-        <li><a href="#valores">Valores</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+  <!-- ====================== -->
+  <!-- 🔹 MENÚ LATERAL MÓVIL -->
+  <!-- ====================== -->
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" onclick="toggleMenu()">✕</button>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#lavanderia">Lavandería</a></li>
+        <li><a href="#cocina">Cocina</a></li>
+        <li><a href="#banos">Baños</a></li>
+        <li><a href="#automotriz">Automotriz</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="Catálogo AZ Clean 2025.pdf" target="_blank">Ver Catálogo</a></li>
       </ul>
-    </li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="Catálogo AZ Clean 2025.pdf" target="_blank">Catálogo</a></li>
-  </ul>
+    </nav>
+  </aside>
 
-  <!-- 🔹 Buscador -->
-  <div class="buscador">
-    <input type="text" placeholder="Buscar productos...">
-    <button>🔍</button>
-  </div>
-</nav>
+  <!-- 🔸 Script para activar el menú -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("sideMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
 
-<section class="landing-hero">
-  <div class="landing-overlay">
-    <h1>Haz que cada espacio brille</h1>
-    <p>Desde cloro hasta sanitizante, tenemos todo para que la limpieza sea fácil, rápida y profesional.</p>
-    <a href="#catalogo" class="btn">Ver Catálogo</a>
-  </div>
-</section>
+  <!-- =========================== -->
+  <!-- 🔹 ENCABEZADO SUPERIOR (LOGO + WHATSAPP) -->
+  <!-- =========================== -->
+  <header class="top-header">
+    <div class="nav-container">
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <img src="img/icono-menu.svg" alt="Menú" />
+      </button>
 
-<!-- 🔹 Sección Lavandería visual -->
-<section class="landing-lavanderia">
-  <div class="overlay-lavanderia">
-    <div class="contenido-lavanderia">
-      <h2>Tus textiles, como nuevos</h2>
-      <p>Renueva aromas, colores y suavidad con nuestra línea de lavandería de alto rendimiento.</p>
-      <a href="#catalogo" class="btn-lavanderia">Ver Catálogo</a>
+      <!-- Logo central -->
+      <div class="logo-container">
+        <img src="img/logo_az_clean_web.png" alt="AZ Clean" />
+      </div>
+
+      <!-- WhatsApp + teléfono -->
+      <div class="contacto-container">
+        <a href="https://wa.me/528128641215" target="_blank">
+          <img src="img/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <span class="telefono">(81) 2864 1215</span>
+      </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- 🔹 Sección Cocina visual -->
-<section class="landing-cocina">
-  <div class="overlay-cocina">
-    <div class="contenido-cocina">
-      <h2>Brilla tu cocina. Cuida tu salud.</h2>
-      <p>Elimina grasa, restos de comida y bacterias con nuestra línea de limpieza para cocinas.</p>
-      <a href="#catalogo" class="btn-cocina">Ver Catálogo</a>
+  <!-- ====================== -->
+  <!-- 🔹 MENÚ DE NAVEGACIÓN -->
+  <!-- ====================== -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li class="dropdown">
+        <a href="#">Empresa ▾</a>
+        <ul class="submenu">
+          <li><a href="#mision">Misión</a></li>
+          <li><a href="#vision">Visión</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+      </li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="Catálogo AZ Clean 2025.pdf" target="_blank">Catálogo</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== -->
+  <!-- 🔹 SECCIÓN HERO        -->
+  <!-- ====================== -->
+  <section class="landing-hero" id="inicio">
+    <div class="landing-overlay">
+      <h1>Haz que cada espacio brille</h1>
+      <p>Desde cloro hasta sanitizante, tenemos todo para que la limpieza sea fácil, rápida y profesional.</p>
+      <a href="#catalogo" class="btn">Ver Catálogo</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 🔹 Sección Baños visual -->
-<section class="landing-banos">
-  <div class="overlay-banos">
-    <div class="contenido-banos">
-      <h2>Tu mejor aliado en higiene y desinfección.</h2>
-      <p>Elimina sarro, bacterias y malos olores con nuestra línea para baños.</p>
-      <a href="#catalogo" class="btn-banos">Ver Catálogo</a>
+  <!-- ====================== -->
+  <!-- 🔹 SECCIONES VISUALES -->
+  <!-- ====================== -->
+
+  <section class="landing-lavanderia" id="lavanderia">
+    <div class="overlay-lavanderia">
+      <div class="contenido-lavanderia">
+        <h2>Tus textiles, como nuevos</h2>
+        <p>Renueva aromas, colores y suavidad con nuestra línea de lavandería de alto rendimiento.</p>
+        <a href="#catalogo" class="btn-lavanderia">Ver Catálogo</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- 🔹 Sección Automotriz visual -->
-<section class="landing-automotriz">
-  <div class="overlay-automotriz">
-    <div class="contenido-automotriz">
-      <h2>Cuida el brillo, cuida tu inversión.</h2>
-      <p>Dale a cada auto un acabado profesional con nuestra línea automotriz.</p>
-      <a href="#catalogo" class="btn-automotriz">Ver Catálogo</a>
+  <section class="landing-cocina" id="cocina">
+    <div class="overlay-cocina">
+      <div class="contenido-cocina">
+        <h2>Brilla tu cocina. Cuida tu salud.</h2>
+        <p>Elimina grasa, restos de comida y bacterias con nuestra línea de limpieza para cocinas.</p>
+        <a href="#catalogo" class="btn-cocina">Ver Catálogo</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="landing-banos" id="banos">
+    <div class="overlay-banos">
+      <div class="contenido-banos">
+        <h2>Tu mejor aliado en higiene y desinfección.</h2>
+        <p>Elimina sarro, bacterias y malos olores con nuestra línea para baños.</p>
+        <a href="#catalogo" class="btn-banos">Ver Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-automotriz" id="automotriz">
+    <div class="overlay-automotriz">
+      <div class="contenido-automotriz">
+        <h2>Cuida el brillo, cuida tu inversión.</h2>
+        <p>Dale a cada auto un acabado profesional con nuestra línea automotriz.</p>
+        <a href="#catalogo" class="btn-automotriz">Ver Catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== -->
+  <!-- 🔹 PRODUCTOS DESTACADOS -->
+  <!-- =========================== -->
   <section class="section" id="productos">
     <h2>Productos Destacados</h2>
     <div class="productos-grid">
@@ -130,6 +179,9 @@
     </div>
   </section>
 
+  <!-- ====================== -->
+  <!-- 🔹 TESTIMONIOS -->
+  <!-- ====================== -->
   <section class="section testimonios">
     <h2>Opiniones</h2>
     <div class="testimonios-grid">
@@ -151,61 +203,47 @@
     </div>
   </section>
 
-<!-- BLOQUE DE CONTACTO FUNCIONAL -->
-<section class="landing-contacto" id="contacto">
-  <div class="contacto-contenido" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4em; padding: 2em; background-color: #002600; color: white;">
+  <!-- ====================== -->
+  <!-- 🔹 CONTACTO + FORMULARIO -->
+  <!-- ====================== -->
+  <section class="landing-contacto" id="contacto">
+    <div class="contacto-contenido">
+      <!-- Info de contacto -->
+      <div class="bloque-contacto">
+        <img src="img/logo_az_clean_blanco.png" alt="AZ Clean Logo" class="logo-contacto">
+        <h2>Contacto</h2>
 
-    <!-- Columna izquierda: datos -->
-    <div class="bloque-contacto" style="flex: 1 1 300px; max-width: 400px;">
-      <img src="img/logo_az_clean_blanco.png" alt="AZ Clean Logo" style="max-width: 180px; margin-bottom: 1em;">
-      <h2 style="margin-bottom: 1.5em;">Contacto</h2>
-    
-      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
-        <img src="img/icono-correo.png" alt="Correo" style="width: 32px; height: 32px;">
-        <p style="margin: 0;">azcleanmx@gmail.com</p>
+        <div class="item-contacto"><img src="img/icono-correo.png" alt="Correo"><p>azcleanmx@gmail.com</p></div>
+        <div class="item-contacto"><img src="img/icono-whatsapp.png" alt="WhatsApp"><p>(81) 2864 1215</p></div>
+        <div class="item-contacto"><img src="img/icono-facebook.png" alt="Facebook"><p>AZ Clean</p></div>
+        <div class="item-contacto"><img src="img/icono-instagram.png" alt="Instagram"><p>@azcleanmx</p></div>
+        <div class="item-contacto"><img src="img/icono-mapa.png" alt="Ubicación">
+          <p>
+            Pascasio Luis de Letona 312,<br>
+            Paseo de San Nicolás 1er Sector,<br>
+            66446 San Nicolás de los Garza, N.L.
+          </p>
+        </div>
       </div>
 
-      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
-        <img src="img/icono-whatsapp.png" alt="WhatsApp" style="width: 32px; height: 32px;">
-        <p style="margin: 0;">(81) 2864 1215</p>
-      </div>
-
-      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
-        <img src="img/icono-facebook.png" alt="Facebook" style="width: 32px; height: 32px;">
-        <p style="margin: 0;">AZ Clean</p>
-      </div>
-
-      <div class="item-contacto" style="display: flex; align-items: center; gap: 1em; margin-bottom: 1.2em;">
-        <img src="img/icono-instagram.png" alt="Instagram" style="width: 32px; height: 32px;">
-        <p style="margin: 0;">@azcleanmx</p>
-      </div>
-
-      <div class="item-contacto" style="display: flex; align-items: flex-start; gap: 1em; margin-bottom: 1.2em;">
-        <img src="img/icono-mapa.png" alt="Ubicación" style="width: 32px; height: 32px;">
-        <p style="margin: 0;">
-          Pascasio Luis de Letona 312,<br>
-          Paseo de San Nicolás 1er Sector,<br>
-          66446 San Nicolás de los Garza, N.L.
-        </p>
+      <!-- Formulario de HubSpot -->
+      <div class="formulario-contacto-derecha">
+        <script src="https://js.hsforms.net/forms/embed/50065620.js" defer></script>
+        <div class="hs-form-frame"
+             data-region="na1"
+             data-form-id="fc2b4d55-a5f7-4e07-b007-cb5ead1a6ead"
+             data-portal-id="50065620">
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Columna derecha: FORMULARIO DE HUBSPOT -->
-    <div class="formulario-contacto-derecha" style="flex: 1 1 400px;">
-      <script src="https://js.hsforms.net/forms/embed/50065620.js" defer></script>
-      <div class="hs-form-frame"
-           data-region="na1"
-           data-form-id="fc2b4d55-a5f7-4e07-b007-cb5ead1a6ead"
-           data-portal-id="50065620">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 🔹 FIN DEL FORMULARIO DE HUBSPOT -->
-
+  <!-- ====================== -->
+  <!-- 🔹 PIE DE PÁGINA -->
+  <!-- ====================== -->
   <footer>
     <p>&copy; 2025 AZ Clean. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
-
