@@ -1082,16 +1082,33 @@ html, body {
 
 /* Responsive: menú al colapsar */
 @media (max-width: 768px) {
-  .nav-container {
-    justify-content: space-between;
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .logo-container img {
-    height: 32px;
+  .bloque-contacto,
+  .formulario-contacto-derecha {
+    width: 100%;
+    max-width: 100%;
   }
 
-  .contacto-container .telefono {
-    display: none;
+  .item-contacto {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding-left: 1em;
+  }
+
+  .item-contacto p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .bloque-contacto h2,
+  .bloque-contacto img {
+    padding-left: 1em;
   }
 }
 
