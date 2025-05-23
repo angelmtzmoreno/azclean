@@ -1251,22 +1251,19 @@ html, body {
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
-  .contacto-contenido {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bloque-contacto,
   .formulario-contacto-derecha {
     width: 100%;
-    max-width: 100%;
+    min-width: auto;
   }
 
-  .item-contacto {
-    justify-content: flex-start;
+  .hs-form-frame {
+    width: 100% !important;
+    min-width: auto !important;
+    box-sizing: border-box;
   }
 
-  .item-contacto p {
-    text-align: left;
+  .hs-form iframe {
+    width: 100% !important;
   }
+}
 }
