@@ -1145,3 +1145,111 @@ html, body {
 .side-menu nav ul li a:hover {
   text-decoration: underline;
 }
+
+/* 🎨 Fondo y estructura */
+.landing-contacto {
+  background-color: #002d00;
+  color: white;
+  padding: 4em 2em;
+}
+
+.contacto-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 📍 Columna izquierda */
+.bloque-contacto {
+  flex: 1 1 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+/* ✅ Ítems de contacto */
+.item-contacto {
+  display: flex;
+  align-items: flex-start; /* importante para alinear ícono arriba */
+  gap: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.item-contacto img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.item-contacto p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* ✅ Solo para dirección: permite saltos de línea */
+.item-contacto .direccion-texto {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: white;
+  margin: 0;
+}
+
+.direccion-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.direccion-texto p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  font-size: 1em;
+  text-align: left;
+}
+
+/* 📄 Columna derecha */
+.formulario-contacto-derecha {
+  flex: 2 1 600px;
+  min-width: 400px;
+  width: 100%;
+}
+
+.hs-form-frame {
+  min-height: 600px;
+  width: 100%;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque-contacto,
+  .formulario-contacto-derecha {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .item-contacto {
+    justify-content: flex-start;
+  }
+
+  .item-contacto p {
+    text-align: left;
+  }
+}
